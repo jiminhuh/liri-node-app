@@ -11,7 +11,7 @@ var spotify = new Spotify(keys.spotify);
 // Grab user input 
 
 var command = process.argv[2];
-var input = process.argv[3];
+var input = process.argv.splice(3).join(" ");
 
 // concert-this
 if(command === "concert-this") {
